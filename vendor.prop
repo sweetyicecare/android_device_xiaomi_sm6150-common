@@ -176,9 +176,6 @@ debug.stagefright.omx_default_rank=512
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
 
-# QC framework value-adds
-ro.vendor.qti.va_aosp.support=1
-
 # Radio
 persist.vendor.radio.data_ltd_sys_ind=1
 persist.vendor.radio.dynamic_sar=1
