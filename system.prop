@@ -4,6 +4,10 @@ vendor.bluetooth.soc=cherokee
 # Charger
 ro.charger.enable_suspend=true
 
+# IOP
+vendor.iop.enable_prefetch_ofr=1
+vendor.iop.enable_uxe=0
+
 # Netflix custom property
 ro.netflix.bsp_rev=Q6150-17263-1
 
