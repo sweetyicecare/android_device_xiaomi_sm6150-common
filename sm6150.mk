@@ -333,9 +333,6 @@ PRODUCT_PACKAGES += \
     SweetSystemUI
 
 # Perf
-PRODUCT_PACKAGES += \
-    vendor.qti.hardware.perf@2.2.vendor
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
@@ -358,7 +355,8 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
-    overlay
+    overlay \
+    perf
 
 # Ramdisk
 PRODUCT_PACKAGES += \
