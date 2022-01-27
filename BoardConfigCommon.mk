@@ -59,6 +59,9 @@ TARGET_ENABLE_MEDIADRM_64 := true
 # FM
 BOARD_HAVE_QCOM_FM := true
 
+# GPS
+LOC_HIDL_VERSION := 4.0
+
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     $(COMMON_PATH)/framework_compatibility_matrix.xml \
