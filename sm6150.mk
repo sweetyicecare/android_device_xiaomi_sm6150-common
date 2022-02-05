@@ -213,17 +213,18 @@ PRODUCT_COPY_FILES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    com.gsma.services.nfc \
-    libchrome.vendor \
-    NfcNci \
-    Tag
+    android.hardware.nfc@1.2-service \
+    android.hardware.nfc@1.2.vendor
 
 PRODUCT_PACKAGES += \
-    android.hardware.nfc@1.2-service
+    NfcNci \
+    Tag \
+    SecureElement \
+    com.android.nfc_extras \
+    com.gsma.services.nfc \
+    libchrome.vendor
 
 PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.ese.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.ese.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.hce.xml \
     frameworks/native/data/etc/android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.hcef.xml \
     frameworks/native/data/etc/android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_nfc/android.hardware.nfc.uicc.xml \
@@ -296,7 +297,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     fstab.zram \
     fstab.qcom \
-    init.nfc.rc \
     init.qcom.power.rc \
     init.qcom.rc \
     init.recovery.qcom.rc \
