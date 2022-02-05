@@ -99,10 +99,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.bluetooth_le.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth_le.xml \
-    frameworks/native/data/etc/android.hardware.bluetooth.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.bluetooth.xml
-
 # Camera
 PRODUCT_PACKAGES += \
     libgui_vendor \
@@ -186,11 +182,6 @@ endif
 
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
-
-# FM
-PRODUCT_PACKAGES += \
-    FM2 \
-    qcom.fmradio
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -366,6 +357,7 @@ PRODUCT_COPY_FILES += \
 
 # QTI
 TARGET_COMMON_QTI_COMPONENTS := \
+    bt \
     overlay \
     perf
 
