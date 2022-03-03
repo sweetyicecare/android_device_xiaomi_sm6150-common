@@ -123,16 +123,9 @@ persist.vendor.dpmhalservice.enable=1
 
 # Display
 debug.sf.disable_backpressure=1
-debug.sf.use_phase_offsets_as_durations=1
-debug.sf.late.sf.duration=10500000
-debug.sf.late.app.duration=20500000
-debug.sf.early.sf.duration=21000000
-debug.sf.early.app.duration=16500000
-debug.sf.earlyGl.sf.duration=13500000
-debug.sf.earlyGl.app.duration=21000000
+debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
 debug.sf.latch_unsignaled=1
-ro.surface_flinger.protected_contents=true
 vendor.display.disable_rotator_downscale=1
 vendor.display.qdcm.mode_combine=1
 
@@ -166,6 +159,22 @@ persist.vendor.radio.report_codec=1
 
 # Soc
 ro.soc.manufacturer=Qualcomm
+
+# Smooth Display
+debug.sf.use_phase_offsets_as_durations=1
+debug.sf.frame_rate_multiple_threshold=120
+debug.sf.late.sf.duration=10500000
+debug.sf.late.app.duration=16600000 
+debug.sf.early.sf.duration=16600000
+debug.sf.early.app.duration=16600000 
+debug.sf.earlyGl.sf.duration=16600000
+debug.sf.earlyGl.app.duration=16600000
+ro.surface_flinger.set_idle_timer_ms?=500
+ro.surface_flinger.set_touch_timer_ms=750
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.protected_contents=true
+vendor.display.idle_time=0
+vendor.display.idle_time_inactive=0
 
 # USB
 vendor.usb.diag.func.name=diag
