@@ -16,6 +16,9 @@ vendor.camera.aux.packagelist=org.codeaurora.snapcam,org.lineageos.snap,com.andr
 # Charger
 ro.charger.enable_suspend=true
 
+# Display
+debug.force_no_blanking=true
+
 # IOP
 vendor.iop.enable_prefetch_ofr=1
 vendor.iop.enable_uxe=0
