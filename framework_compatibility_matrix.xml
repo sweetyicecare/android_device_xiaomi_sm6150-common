@@ -76,6 +76,13 @@
             <instance>com.qualcomm.qti.uceservice</instance>
         </interface>
     </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.aospa.power</name> 
+        <interface>
+            <name>IPowerFeature</name>
+            <instance>default</instance> 
+        </interface>
+    </hal>
     <hal format="hidl" optional="true">
         <name>vendor.display.color</name>
         <version>1.0-3</version>
