@@ -1,4 +1,10 @@
 # Audio
+persist.vendor.audio.hifi=false
+persist.vendor.audio.ring.filter.mask=0
+ro.vendor.audio.sdk.fluencetype=fluence
+ro.vendor.audio.us.type=mius
+vendor.voice.path.for.pcm.voip=false
+persist.vendor.audio.voicecall.speaker.stereo=true
 aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=1
@@ -121,6 +127,11 @@ persist.vendor.dpm.nsrm.bkg.evt=3955
 persist.vendor.dpmhalservice.enable=1
 
 # Display
+ro.vendor.display.ad=1
+ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
+ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
+ro.vendor.display.sensortype=2
+vendor.display.qdcm.mode_combine=1
 debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.enable_hwc_vds=1
@@ -138,6 +149,12 @@ ro.frp.pst=/dev/block/bootdevice/by-name/frp
 
 # GPU
 ro.gfx.driver.1=com.qualcomm.qti.gpudrivers.sm6150.api30
+
+# HVDCP
+persist.vendor.cp.support_qc3p5=0
+persist.vendor.cp.taper_term_mv=7000
+persist.vendor.cp.fcc_main_ua=400000
+persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
 
 # IMS
 persist.dbg.volte_avail_ovr=1
@@ -158,6 +175,7 @@ persist.vendor.radio.report_codec=1
 
 # Soc
 ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM7150
 
 # Smooth Display
 debug.sf.use_phase_offsets_as_durations=1
