@@ -44,6 +44,9 @@
      from DOZE to ON, in millis. -->
     <integer name="config_wakeUpDelayDoze">32</integer>
 
+    <!-- Whether the display blanks itself when transitioning from a doze to a non-doze state -->
+    <bool name="config_displayBlanksAfterDoze">true</bool>
+
     <!-- Whether usage of the proximity sensor during doze is supported -->
     <bool name="doze_proximity_sensor_supported">false</bool>
 
